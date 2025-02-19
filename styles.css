@@ -5,11 +5,14 @@
     box-sizing: border-box;
 }
 
-body {
+html,body {
+    width:100%;
+    height:100%;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #8e6868;
     color: #333;
+    overflow-y:hidden;
 }
 
 ul {
@@ -21,6 +24,9 @@ ul {
     background-color: #333;
     padding: 1rem;
     text-align: center;
+    position: fixed;
+    top:0;
+    width:100%;
 }
 
 .navbar ul {
@@ -50,7 +56,9 @@ header {
 
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    /* padding: 50px 0px; */
+    /* padding-top:50px; */
+    margin-top:5%;
 }
 
 .hero h1 {
@@ -130,14 +138,43 @@ header {
 }
 
 /* Footer */
-footer {
+footer{
+    height:7%;
     background-color: #333;
     color: white;
     padding: 0px;
     text-align: center;
-    margin-top: 160px;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    /* margin-bottom:1%; */
 }
+ footer i{
+    font-size:2rem;
+    color:rgb(51, 51, 208);
+ }
 #right_main_div{
-    size: 30px;
+    margin-top:1%;
+    width:100%;
+    height:50vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.img{
+    /* width:27%;
+    height:100%; */
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    /* background-color: pink; */
+    background-image: url(auditorim-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index:1;
+
+}
